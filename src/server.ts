@@ -21,4 +21,4 @@ mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.bpobqoi.mongo
     console.log('Erro ao conectar ao MongoDB', erro.message)
 })
 
-app.listen(SERVER_PORT)
+app.listen(SERVER_PORT || 5000)

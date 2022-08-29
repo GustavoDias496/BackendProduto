@@ -6,7 +6,7 @@ require('dotenv/config')
 
 const DB_USER = process.env.DB_USER
 const DB_PASSWORD = process.env.DB_PASSWORD
-const SERVER_PORT = process.env.SERVER_PORT || 8000
+let SERVER_PORT = process.env.SERVER_PORT || 8000
 
 const app = express()
 

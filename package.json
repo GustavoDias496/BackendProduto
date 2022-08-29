@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
-    "start": "node dist/server.js",
+    "start": "node dist/server.js -p $PORT",
     "build": "rimraf dist && tsc"
   },
   "keywords": [],

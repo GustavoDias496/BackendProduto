@@ -1,1 +1,1 @@
-web: npm start --bind :$PORT
+web: npm start

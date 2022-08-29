@@ -6,7 +6,7 @@ require('dotenv/config')
 
 const DB_USER = process.env.DB_USER
 const DB_PASSWORD = process.env.DB_PASSWORD
-const SERVER_PORT = process.env.SERVER_PORT
+const SERVER_PORT = process.env.SERVER_PORT || 8080
 
 const app = express()
 
@@ -21,4 +21,4 @@ mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.bpobqoi.mongo
     console.log('Erro ao conectar ao MongoDB', erro.message)
 })
 
-app.listen(SERVER_PORT || 5000)
+app.listen(SERVER_PORT)
